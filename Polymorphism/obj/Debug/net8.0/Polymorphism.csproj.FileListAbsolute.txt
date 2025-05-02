@@ -1,0 +1,14 @@
+D:\sonaaa\,net frame_work\Polymorphism\obj\Debug\net8.0\Polymorphism.GeneratedMSBuildEditorConfig.editorconfig
+D:\sonaaa\,net frame_work\Polymorphism\obj\Debug\net8.0\Polymorphism.AssemblyInfoInputs.cache
+D:\sonaaa\,net frame_work\Polymorphism\obj\Debug\net8.0\Polymorphism.AssemblyInfo.cs
+D:\sonaaa\,net frame_work\Polymorphism\obj\Debug\net8.0\Polymorphism.csproj.CoreCompileInputs.cache
+D:\sonaaa\,net frame_work\Polymorphism\bin\Debug\net8.0\Polymorphism.exe
+D:\sonaaa\,net frame_work\Polymorphism\bin\Debug\net8.0\Polymorphism.deps.json
+D:\sonaaa\,net frame_work\Polymorphism\bin\Debug\net8.0\Polymorphism.runtimeconfig.json
+D:\sonaaa\,net frame_work\Polymorphism\bin\Debug\net8.0\Polymorphism.dll
+D:\sonaaa\,net frame_work\Polymorphism\bin\Debug\net8.0\Polymorphism.pdb
+D:\sonaaa\,net frame_work\Polymorphism\obj\Debug\net8.0\Polymorphism.dll
+D:\sonaaa\,net frame_work\Polymorphism\obj\Debug\net8.0\refint\Polymorphism.dll
+D:\sonaaa\,net frame_work\Polymorphism\obj\Debug\net8.0\Polymorphism.pdb
+D:\sonaaa\,net frame_work\Polymorphism\obj\Debug\net8.0\Polymorphism.genruntimeconfig.cache
+D:\sonaaa\,net frame_work\Polymorphism\obj\Debug\net8.0\ref\Polymorphism.dll

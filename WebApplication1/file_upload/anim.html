@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            align-items:center;
+            justify-content: center;
+        }
+        @keyframes example{
+            from { background-color: brown;}
+            to {background-color: aquamarine;}
+            0%{
+                border-radius: 0%;
+
+            }
+            25%{
+                border-radius: 25%;
+            }
+            50%{
+                border-radius: 50%;
+            }
+        }
+        @keyframes example2{
+            from { font-size: 1rem;}
+            to {font-size: 1.2rem;}
+        }
+
+        @keyframes bounce{
+            0%,100%{transform: translateX(20px);}
+            50%{transform: translateY(-20px);}
+        }
+       @keyframes zoominout{
+           0%{opacity:0;}
+           50%{opacity:50;}
+           100%{opacity: 0;}
+       }
+       .my-text{
+           font-size: larger;
+           font-family: Verdans;
+           animation: zoominout 5s infinite;
+           color:blue;
+       }
+        .bounce-text{
+            font-size: larger;
+            font-weight: bold;
+            animation: bounce 1s infinite;
+        }
+        p{
+            
+            text-align: center;
+            width:200px;
+            height: 200px;
+            background-color: red; 
+            animation-name: example,example2;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-direction:reverse;
+        }
+        body{
+           
+            background-color: palevioletred;
+        }
+    </style>
+</head>
+<body>
+    <div class="ani"><p>hiii......</p></div>
+
+    <h1 class="bounce-text">😊</h1>
+    <p class="my-text">Fading Text</p>
+</body>
+</html>

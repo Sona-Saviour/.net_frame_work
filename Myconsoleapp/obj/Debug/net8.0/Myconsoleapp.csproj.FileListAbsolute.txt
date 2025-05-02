@@ -1,0 +1,14 @@
+D:\sonaaa\,net frame_work\Myconsoleapp\bin\Debug\net8.0\Myconsoleapp.exe
+D:\sonaaa\,net frame_work\Myconsoleapp\bin\Debug\net8.0\Myconsoleapp.deps.json
+D:\sonaaa\,net frame_work\Myconsoleapp\bin\Debug\net8.0\Myconsoleapp.runtimeconfig.json
+D:\sonaaa\,net frame_work\Myconsoleapp\bin\Debug\net8.0\Myconsoleapp.dll
+D:\sonaaa\,net frame_work\Myconsoleapp\bin\Debug\net8.0\Myconsoleapp.pdb
+D:\sonaaa\,net frame_work\Myconsoleapp\obj\Debug\net8.0\Myconsoleapp.GeneratedMSBuildEditorConfig.editorconfig
+D:\sonaaa\,net frame_work\Myconsoleapp\obj\Debug\net8.0\Myconsoleapp.AssemblyInfoInputs.cache
+D:\sonaaa\,net frame_work\Myconsoleapp\obj\Debug\net8.0\Myconsoleapp.AssemblyInfo.cs
+D:\sonaaa\,net frame_work\Myconsoleapp\obj\Debug\net8.0\Myconsoleapp.csproj.CoreCompileInputs.cache
+D:\sonaaa\,net frame_work\Myconsoleapp\obj\Debug\net8.0\Myconsoleapp.dll
+D:\sonaaa\,net frame_work\Myconsoleapp\obj\Debug\net8.0\refint\Myconsoleapp.dll
+D:\sonaaa\,net frame_work\Myconsoleapp\obj\Debug\net8.0\Myconsoleapp.pdb
+D:\sonaaa\,net frame_work\Myconsoleapp\obj\Debug\net8.0\Myconsoleapp.genruntimeconfig.cache
+D:\sonaaa\,net frame_work\Myconsoleapp\obj\Debug\net8.0\ref\Myconsoleapp.dll
