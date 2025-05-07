@@ -1,0 +1,77 @@
+﻿@{
+    ViewData["Title"] = "SearchEmployee";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>View Branch</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        select {
+            width: 300px;
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Select an Employee</h2>
+
+    <select id="sel">
+        <option value="">-- Select Employee --</option>
+    </select>
+
+    <script>
+        window.onload = function () {
+            fetchAndLoadDropdown();
+        };
+
+        function fetchAndLoadDropdown() {
+            const flag = "Getnamedetails";
+
+            $.ajax({
+                type: "GET",
+                url: '/Employee/getAPIData',
+                data: { datas: flag },
+                async: false,
+                success: function (response) {
+                    const data = JSON.parse(response);
+                    loadDropdown(data);
+                },
+                error: function () {
+                    alert("Error loading data from API");
+                }
+            });
+        }
+
+        function loadDropdown(data) {
+            const select = document.getElementById("sel");
+
+            // Clear previous options except the first
+            select.length = 1;
+
+            if (Array.isArray(data) && data.length > 0) {
+                data.forEach(item => {
+                    const option = document.createElement("option");
+
+                    // Use backticks for template literals (correct syntax)
+                    option.value = item.id;  // Assuming `id` is the key
+                    option.text = `${item.id} ------ ${item.ename}`;  // Assuming `ename` is the employee name
+
+                    select.appendChild(option);
+                });
+            }
+        }
+    </script>
+
+</body>
+</html>

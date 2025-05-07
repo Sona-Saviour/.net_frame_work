@@ -1,0 +1,15 @@
+D:\sonaaa\netframe_work\API_Example\Data_Access\bin\Debug\net8.0\Data_Access.deps.json
+D:\sonaaa\netframe_work\API_Example\Data_Access\bin\Debug\net8.0\Data_Access.dll
+D:\sonaaa\netframe_work\API_Example\Data_Access\bin\Debug\net8.0\Data_Access.pdb
+D:\sonaaa\netframe_work\API_Example\Data_Access\obj\Debug\net8.0\Data_Access.GeneratedMSBuildEditorConfig.editorconfig
+D:\sonaaa\netframe_work\API_Example\Data_Access\obj\Debug\net8.0\Data_Access.AssemblyInfoInputs.cache
+D:\sonaaa\netframe_work\API_Example\Data_Access\obj\Debug\net8.0\Data_Access.AssemblyInfo.cs
+D:\sonaaa\netframe_work\API_Example\Data_Access\obj\Debug\net8.0\Data_Access.csproj.CoreCompileInputs.cache
+D:\sonaaa\netframe_work\API_Example\Data_Access\obj\Debug\net8.0\Data_Access.sourcelink.json
+D:\sonaaa\netframe_work\API_Example\Data_Access\obj\Debug\net8.0\Data_Access.dll
+D:\sonaaa\netframe_work\API_Example\Data_Access\obj\Debug\net8.0\refint\Data_Access.dll
+D:\sonaaa\netframe_work\API_Example\Data_Access\obj\Debug\net8.0\Data_Access.pdb
+D:\sonaaa\netframe_work\API_Example\Data_Access\obj\Debug\net8.0\ref\Data_Access.dll
+D:\sonaaa\netframe_work\API_Example\Data_Access\bin\Debug\net8.0\Data_Access.runtimeconfig.json
+D:\sonaaa\netframe_work\API_Example\Data_Access\obj\Debug\net8.0\Data_Access.csproj.AssemblyReference.cache
+D:\sonaaa\netframe_work\API_Example\Data_Access\obj\Debug\net8.0\Data_Access.genruntimeconfig.cache
