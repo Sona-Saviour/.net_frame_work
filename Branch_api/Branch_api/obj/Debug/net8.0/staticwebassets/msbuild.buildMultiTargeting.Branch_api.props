@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Branch_api.props" />
+</Project>

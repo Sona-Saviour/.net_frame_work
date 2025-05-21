@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\sonaaa\\,net frame_work\\Polymorphism\\Polymorphism.csproj": {}
+    "D:\\sonaaa\\netframe_work\\Polymorphism\\Polymorphism.csproj": {}
   },
   "projects": {
-    "D:\\sonaaa\\,net frame_work\\Polymorphism\\Polymorphism.csproj": {
+    "D:\\sonaaa\\netframe_work\\Polymorphism\\Polymorphism.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\sonaaa\\,net frame_work\\Polymorphism\\Polymorphism.csproj",
+        "projectUniqueName": "D:\\sonaaa\\netframe_work\\Polymorphism\\Polymorphism.csproj",
         "projectName": "Polymorphism",
-        "projectPath": "D:\\sonaaa\\,net frame_work\\Polymorphism\\Polymorphism.csproj",
+        "projectPath": "D:\\sonaaa\\netframe_work\\Polymorphism\\Polymorphism.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\sonaaa\\,net frame_work\\Polymorphism\\obj\\",
+        "outputPath": "D:\\sonaaa\\netframe_work\\Polymorphism\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

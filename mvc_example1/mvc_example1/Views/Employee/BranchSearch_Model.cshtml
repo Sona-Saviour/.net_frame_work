@@ -1,0 +1,141 @@
+﻿
+@{
+    ViewData["Title"] = "BranchSearch_Model";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>View Branch</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        select {
+            width: 300px;
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Select an Employee</h2>
+
+    <select id="sel" onchange="Fetchemployee();">
+        <option value="">-- Select Employee --</option>
+    </select>
+    <br>
+
+    <div>
+        <form action="/" method="post">
+
+            name: <input type="text" id="name" value="" /><br>
+            id: <input type="text" id="id" value="" /><br>
+            Designation: <input type="text" id="designation" />  <br />
+            salary: <input type="number" id="salary" />  <br />
+            department: <input type="text" id="dept" />  <br />
+        </form>
+    </div>
+
+    <script>
+        window.onload = function () {
+            fetchAndLoadDropdown();
+        };
+
+        function fetchAndLoadDropdown() {
+            const flag = "Getnamedetails";
+
+            $.ajax({
+                type: "GET",
+                url: '/Employee/getAPIData',
+                data: { datas: flag },
+                async: false,
+                success: function (response) {
+                    const data = JSON.parse(response);
+                    loadDropdown(data);
+                },
+                error: function () {
+                    alert("Error loading data from API");
+                }
+            });
+        }
+
+        function loadDropdown(data) {
+            const select = document.getElementById("sel");
+
+            // Clear previous options except the first
+            select.length = 1;
+
+            if (Array.isArray(data) && data.length > 0) {
+                data.forEach(item => {
+                    const option = document.createElement("option");
+
+                    // Use backticks for template literals (correct syntax)
+                    option.value = item.id;  // Assuming `id` is the key
+                    option.text = `${item.id} ------ ${item.ename}`;  // Assuming `ename` is the employee name
+
+                    select.appendChild(option);
+                });
+            }
+        }
+
+
+        function Fetchemployee()  {
+
+            const employeeSelect = document.getElementById('sel');
+            const selectedvalue = employeeSelect.value;
+            fetchapiget2(selectedvalue);
+        }
+
+
+        function fetchapiget2(selectedvalue)
+
+            {
+
+            debugger;
+            var flag="SearchById";
+
+            var indata = flag + "/" + selectedvalue;  //API flag
+
+            $.ajax({
+                type: "GET",
+                url: '/Employee/getAPIData',
+                data: { datas: indata },
+                async: false,
+                success: function (response) {
+                    const data = JSON.parse(response);
+                  loaddatatextbox(data);
+                },
+                error: function () {
+                    alert("Error loading data from API");
+                }
+            });
+        }
+
+        function loaddatatextbox(data)  {
+
+            debugger;
+
+            if (data.length >0 ) {
+
+                document.getElementById('id').value=data[0].id;
+                document.getElementById('name').value=data[0].ename;
+                document.getElementById('designation').value=data[0].designation;
+                document.getElementById('salary').value=data[0].salary;
+                document.getElementById('dept').value=data[0].dept;
+            }
+
+
+        }
+
+    </script>
+
+</body>
+</html>
+

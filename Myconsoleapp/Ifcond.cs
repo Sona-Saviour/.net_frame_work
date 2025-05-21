@@ -30,6 +30,6 @@ namespace Myconsoleapp
     Ifcond ob = new Ifcond();
     ob.oddeven();
      }
- }
+     }
 }
 

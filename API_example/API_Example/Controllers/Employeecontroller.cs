@@ -22,7 +22,7 @@ namespace API_Example.Controllers
 
         public async Task<dynamic> Getname([FromRoute] string name)
         {
-            var res = await _service.GetnameService(name);
+            var res = await _service.GetnameService(name); 
             return res;
         }
 

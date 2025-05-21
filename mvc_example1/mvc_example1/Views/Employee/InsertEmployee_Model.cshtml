@@ -1,0 +1,139 @@
+﻿
+@{
+    ViewData["Title"] = "InsertEmployee_Model";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Form</title>
+
+    <style>
+
+
+
+
+        form {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            width: 100%;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 6px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="button"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="" method="POST">
+        <h2>Employee Details</h2>
+        <label for="id">ID:</label>
+        <input type="number" name="id" id="id" required><br><br>
+
+        <label for="ename">Name:</label>
+        <input type="text" name="ename" id="ename" required><br><br>
+
+        <label for="designation">Designation:</label>
+        <input type="text" name="designation" id="designation" required><br><br>
+
+        <label for="salary">Salary:</label>
+        <input type="number" name="salary" id="salary" required><br><br>
+
+        <label for="dept">Department:</label>
+        <input type="text" name="dept" id="dept" required><br><br>
+
+        <input type="button" onclick="insert()" value="Submit">
+    </form>
+
+    <script>
+        function insert()
+        {
+            var emp_id = document.getElementById('id').value;
+            var emp_name = document.getElementById('ename').value;
+            var desg = document.getElementById('designation').value;
+            var sal = document.getElementById('salary').value;
+            var dept = document.getElementById('dept').value;
+
+            fetchapiPost(emp_id,emp_name,desg,sal,dept);
+        }
+
+
+        function fetchapiPost(id,ename,designation,salary,dept)
+
+        {   
+            var employee = {
+
+                Id : id,
+                ename : ename,
+                designation : designation,
+                salary : salary,
+                department : dept
+
+            };
+
+
+
+
+            
+            $.ajax({
+                type:"POST",
+                url: '/Employee/postAPIData_model',
+                contentType: "application/json",
+                
+                data:JSON.stringify(employee),
+
+           
+                success: function (response)  {
+
+                    alert("successfully updated. emp_id:   "+ response);
+                },
+                error: function (response)  {
+                    alert("Error occured while inserting employee.");
+                }
+            });
+
+
+        }
+
+    </script>
+
+</body>
+</html>

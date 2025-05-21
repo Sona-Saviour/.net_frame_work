@@ -22,6 +22,40 @@
     "EndpointName": "Getnamedetails"
   },
   {
+    "ContainingType": "api_example2.Controllers.EmployeeController",
+    "Method": "InsertEmployee",
+    "RelativePath": "InsertEmployee",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "employee",
+        "Type": "api_example2.Models.EmployeeModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "InsertEmployee"
+  },
+  {
+    "ContainingType": "api_example2.Controllers.EmployeeController",
+    "Method": "SearchById",
+    "RelativePath": "SearchById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "SearchById"
+  },
+  {
     "ContainingType": "api_example2.Controllers.WeatherForecastController",
     "Method": "Get",
     "RelativePath": "WeatherForecast",

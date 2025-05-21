@@ -3,6 +3,23 @@ using api_example2.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
+//cors
+//Add cors
+builder.Services.AddCors(o => o.AddPolicy("MyPolicy", builder =>
+{
+    builder.AllowAnyOrigin()
+    .AllowAnyMethod()
+    .AllowAnyHeader()
+    .SetIsOriginAllowed((host) => true);
+}
+
+));
+
+
+
+
+
+
 // Add services to the container.
 
 
@@ -29,6 +46,10 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseRouting();
+
+app.UseCors("MyPolicy");
 
 app.UseAuthorization();
 
